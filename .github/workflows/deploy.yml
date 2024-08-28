@@ -20,7 +20,7 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm install --force
+      run: npm ci --force
 
     - name: Build project
       run: npm run build --force
