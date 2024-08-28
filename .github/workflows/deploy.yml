@@ -1,4 +1,4 @@
-name: Deploy Vite React TS App
+name: Deploy Ephraim Portfolio App
 
 on:
   push:
@@ -20,10 +20,10 @@ jobs:
         cache: 'npm'
 
     - name: Install dependencies
-      run: npm install
+      run: npm install --force
 
     - name: Build project
-      run: npm run build
+      run: npm run build --force
 
     - name: Deploy to GitHub Pages
       uses: peaceiris/actions-gh-pages@v3
